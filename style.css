@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* reset */
+
+ul, li, dl, dt, dd {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header */
+
+.header .logo img {
+    width: 166px;
+}
+
+/* footer */
+
+.footer .get-cola {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.get-list {
+    background-color: #EAE8FE;
+    overflow: scroll;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+.get-item {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 46px;
+    text-align: justify;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 12px 18px 6px 12px;
+    background-image: url(images/Original_Cola.png);
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    background-position: 10px 50%;
+}
+
+.get-item.green {
+    background-image: url(images/Green_Cola.png);
+}
+
+.get-item.orange {
+    background-image: url(images/Orange_Cola.png);
+}
+
+.get-item.violet {
+    background-image: url(images/Violet_Cola.png);
+}
+
+.get-item:last-child {
+    margin-bottom: 150px;
+}
+
+.get-name {
+    font-size: 9px;
+    font-weight: 500;
+    color: #333333;
+    margin-left: 38px;
+}
+
+.get-num {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.total {
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    font-weight: 500;
+}
