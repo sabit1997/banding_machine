@@ -14,85 +14,95 @@
     <header class="header">
         <h1 class="logo"><img src="images/logo.png" alt="로고"></h1>
     </header>
-    <main class="main">
-        <ul class="menu-list">
-            <li class="menu original">
-                <p class="menu-name">Original_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-            <li class="menu violet">
-                <p class="menu-name">Violet_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-            <li class="menu yellow">
-                <p class="menu-name">Yellow_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-            <li class="menu cool">
-                <p class="menu-name">Cool_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-            <li class="menu green">
-                <p class="menu-name">Green_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-            <li class="menu orange">
-                <p class="menu-name">Orange_Cola</p>
-                <p class="menu-price">1000원</p>
-            </li>
-        </ul>
-        <form class="active-section" action="get">
-            <div class="balance">
-                <di class="balance-num">
-                    <dt>잔액 :</dt>
-                    <dd>1,000원</dd>
-                </di>
-                <button class="button balance" type="button">거스름돈 반환</button>
-            </div>
-            <div class="deposit">
-                <input class="deposit-enter" type="number" placeholder="입금액 입력">
-                <button class="button deposit" type="butoon">입금</button>
-            </div>
-            <div class="take-section">
-                <ul class="take-box">
-                    <li class="take-list">
-                        <p class="take-name first">Original_Cola</p>
-                        <p class="take-num first">1</p>
+    <section class="banding-machine">
+        <main class="main">
+            <ul class="menu-list">
+                <div class="list-one">
+                    <li class="menu original">
+                        <p class="menu-name">Original_Cola</p>
+                        <p class="menu-price">1000원</p>
                     </li>
-                    <li class="take-list two">
-                        <p class="take-name second">Green_Cola</p>
-                        <p class="take-num second">2</p>
+                    <li class="menu violet">
+                        <p class="menu-name">Violet_Cola</p>
+                        <p class="menu-price">1000원</p>
+                    </li>
+                    <li class="menu yellow">
+                        <p class="menu-name">Yellow_Cola</p>
+                        <p class="menu-price">1000원</p>
+                    </li>
+                </div>
+                <div class="list-two">
+                    <li class="menu cool">
+                        <p class="menu-name">Cool_Cola</p>
+                        <p class="menu-price">1000원</p>
+                    </li>
+                    <li class="menu green">
+                        <p class="menu-name">Green_Cola</p>
+                        <p class="menu-price">1000원</p>
+                    </li>
+                    <li class="menu orange">
+                        <p class="menu-name">Orange_Cola</p>
+                        <p class="menu-price">1000원</p>
+                    </li>
+                </div>
+            </ul>
+            <form class="active-section" action="get">
+                <div class="balance">
+                    <di class="balance-num">
+                        <dt>잔액 :</dt>
+                        <dd>1,000원</dd>
+                    </di>
+                    <button class="button balance" type="button">거스름돈 반환</button>
+                </div>
+                <div class="deposit">
+                    <input class="deposit-enter" type="number" placeholder="입금액 입력">
+                    <button class="button deposit" type="butoon">입금</button>
+                </div>
+                <div class="take-section">
+                    <ul class="take-box">
+                        <li class="take-list">
+                            <p class="take-name first">Original_Cola</p>
+                            <p class="take-num first">1</p>
+                        </li>
+                        <li class="take-list two">
+                            <p class="take-name second">Green_Cola</p>
+                            <p class="take-num second">2</p>
+                        </li>
+                    </ul>
+                    <button class="button take" type="button">획득</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="funds-box">
+                <dl class="funds">
+                    <dt>소지금 :</dt>
+                    <dd>25,000원</dd>
+                </dl>
+            </div>
+            <div class="get-box">
+                <h2 class="get-cola">획득한 음료</h2>
+                <ul class="get-list">
+                    <li class="get-item original">
+                        <p class="get-name">Original_Cola</p>
+                        <p class="get-num">1</p>
+                    </li>
+                    <li class="get-item green">
+                        <p class="get-name">Green_Cola</p>
+                        <p class="get-num">2</p>
+                    </li>
+                    <li class="get-item orange">
+                        <p class="get-name">Orange_Cola</p>
+                        <p class="get-num">1</p>
+                    </li>
+                    <li class="get-item violet">
+                        <p class="get-name">Violet_Cola</p>
+                        <p class="get-num">5</p>
                     </li>
                 </ul>
-                <button class="button take" type="button">획득</button>
+                <p class="total">총금액 : 9,000원</p>
             </div>
-        </form>
-        <dl class="funds">
-            <dt>소지금 :</dt>
-            <dd>25,000원</dd>
-        </dl>
-    </main>
-    <footer class="footer">
-        <h2 class="get-cola">획득한 음료</h2>
-        <ul class="get-list">
-            <li class="get-item original">
-                <p class="get-name">Original_Cola</p>
-                <p class="get-num">1</p>
-            </li>
-            <li class="get-item green">
-                <p class="get-name">Green_Cola</p>
-                <p class="get-num">2</p>
-            </li>
-            <li class="get-item orange">
-                <p class="get-name">Orange_Cola</p>
-                <p class="get-num">1</p>
-            </li>
-            <li class="get-item violet">
-                <p class="get-name">Violet_Cola</p>
-                <p class="get-num">5</p>
-            </li>
-        </ul>
-        <p class="total">총금액 : 9,000원</p>
-    </footer>
+        </footer>
+    </section>
 </body>
 </html>

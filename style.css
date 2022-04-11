@@ -8,15 +8,18 @@ body {
 }
 
 .button {
+    font-size: 13px;
+    font-weight: 500;
     width: 94px;
     height: 33px;
+    line-height: 33px;
     border: none;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px #00000040;
     background-color: #fff;
 }
 
-.header, .main, .footer {
+.banding-machine {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,10 +40,18 @@ button:active {
 }
 
 button {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
 }
 
 /* header */
+
+.header {
+    text-align: center;
+}
 
 .header .logo img {
     width: 166px;
@@ -50,9 +61,13 @@ button {
 
 .menu-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.list-one, .list-two {
+    display: flex;
 }
 
 .menu {
@@ -323,7 +338,64 @@ button {
     text-align: end;
 }
 
-
+/* >=768px */
 @media screen and (min-width: 768px) {
+    /* common */
+    body {
+        background-color: #EAE8FE;
+    }
+
+    /* header */
+    .header .logo img {
+        width: 386px;
+        margin-bottom: 82.88px;
+    }
+    /* main */
+    .main {
+        background-color: #fff;
+        width: 360px;
+        margin-right: 28px;
+    }
+
+    .menu-list {
+        margin-top: 31px;
+        align-items: center;
+    }
+
+    .banding-machine {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 28px;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 360px;
+    }
+    .funds-box {
+        height: 50px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .funds {
+        margin-bottom: 0;
+        margin: 9px 27px;
+    }
+
+    .get-box {
+        height: 490px;
+        background-color: #fff;
+    }
+
+    .get-cola {
+        padding-top: 25px;
+    }
     
+    .total {
+        margin-right: 27px;
+    }
+
 }
