@@ -4,13 +4,24 @@
 }
 
 body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.button {
+    width: 94px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #fff;
+}
+
+.header, .main, .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Noto Sans KR', sans-serif;
 }
-
 /* reset */
 
 ul, li, dl, dt, dd {
@@ -35,6 +46,205 @@ button {
     width: 166px;
 }
 
+/* main */
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    width: 94px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #00000080;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background-image: url(images/Original_Cola.png);
+    background-size: 36px auto;
+    background-repeat: no-repeat;
+    background-position: 50% 11.07px;
+    text-align: center;
+}
+
+.menu.violet {
+    background-image: url(images/Violet_Cola.png);
+}
+
+.menu.yellow {
+    background-image: url(images/Yellow_Cola.png);
+}
+
+.menu.cool {
+    background-image: url(images/Cool_Cola.png);
+}
+
+.menu.green {
+    background-image: url(images/Green_Cola.png);
+}
+
+.menu.orange {
+    background-image: url(images/Orange_Cola.png);
+}
+
+.menu:nth-child(3),
+.menu:nth-child(6) {
+    margin-right: 0;
+}
+
+.menu:nth-child(n+4):nth-child(-n+6) {
+    margin-bottom: 0;
+}
+
+.menu-name {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.447777777777778;
+    color: #333333;
+    margin-top: 82px;
+}
+
+.menu-price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 70px;
+    padding: 5px 0;
+    background-color: #6327FE;
+    border-radius: 50px;
+    margin: 4px auto 9px auto;
+    /* 디자인이 안맞아서 일단 7px -> 4px로 바꾸긴 했는데 수정해야 함 */
+}
+
+.active-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 11px;
+}
+
+.balance-num {
+    display: flex;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: #EAE8FE;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.balance-num dt {
+    width: 47px;
+    margin-right: 79px;
+}
+
+.balance-num dd {
+    text-align: end;
+}
+
+.deposit {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+
+.deposit-enter {
+    width: 200px;
+    height: 33px;
+    color: #bdbdbd;
+    text-align: end;
+    padding-right: 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.take-section {
+    display: flex;
+}
+
+.take-box {
+    width: 200px;
+    height: 106px;
+    background-color: #EAE8FE;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    overflow: scroll;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+.take-section .take-list{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 170px;
+    height: 46px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 12px auto;
+    background-image: url(images/Original_Cola.png);
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    background-position: 10px 50%;
+}
+
+.take-list.two {
+    background-image: url(images/Green_Cola.png);
+}
+
+.button.take {
+    color: #fff;
+    background-color: #6327FE;
+    height: 106px;
+}
+
+.take-name {
+    width: 73px;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.447777777777778;
+    margin-right: 21px;
+}
+
+.take-num {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #BDBDBD;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.funds {
+    display: flex;
+    width: 306px;
+    background-color: #EAE8FE;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.447857142857143;
+    padding: 6px 10px;
+    margin-bottom: 74px;
+}
+
+.funds dd {
+    width: 87px;
+    margin-left: 152px;
+    text-align: end;
+}
+
 /* footer */
 
 .footer .get-cola {
@@ -45,11 +255,12 @@ button {
 }
 
 .get-list {
+    width: 306px;
     background-color: #EAE8FE;
     overflow: scroll;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
-    margin-bottom: 6px;
+    margin: 0 auto 6px auto;
 }
 
 .get-item {
@@ -106,8 +317,13 @@ button {
 }
 
 .total {
-    display: flex;
-    justify-content: end;
+    width: inherit;
     font-size: 12px;
     font-weight: 500;
+    text-align: end;
+}
+
+
+@media screen and (min-width: 768px) {
+    
 }
