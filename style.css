@@ -84,6 +84,10 @@ input {
     text-align: center;
 }
 
+.menu.original {
+    outline: 3px solid #6327FE;
+}
+
 .menu.violet {
     position: relative;
     background-image: url(images/Violet_Cola.png);
@@ -109,6 +113,7 @@ input {
 
 .menu.green {
     background-image: url(images/Green_Cola.png);
+    outline: 3px solid #6327FE;
 }
 
 .menu.orange {
