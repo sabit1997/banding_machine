@@ -85,7 +85,18 @@ input {
 }
 
 .menu.violet {
+    position: relative;
     background-image: url(images/Violet_Cola.png);
+}
+
+.menu.violet:hover {
+    outline: none;
+}
+
+.sold-out {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .menu.yellow {
@@ -111,6 +122,10 @@ input {
 
 .menu:nth-child(n+4):nth-child(-n+6) {
     margin-bottom: 0;
+}
+
+.menu:hover {
+    outline: 3px solid #6327FE;
 }
 
 .menu-name {
