@@ -1,6 +1,6 @@
 # Banding Machine
 
-![README.gif](images/readme.gif)
+![README.gif](src/images/readme.gif)
 
 [주소 👆 click me!](https://sabit1997.github.io/banding_machine/index.html)
 
