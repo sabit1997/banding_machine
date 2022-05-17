@@ -20,15 +20,24 @@
 
 const cashInput = document.querySelector(".inp-put");
 const cashInputBtn = document.querySelector(".btn-put");
-const balance = document.querySelector(".txt-balance");
+const balance = document.querySelector(".info-balance");
 
 cashInputBtn.addEventListener("click", () => {
+  const $span = document.createElement("span");
+  const balanceNum = document.createTextNode("0");
+
+  $span.appendChild(balanceNum);
+
+  balance.appendChild($span);
+
   if (cashInput.value <= 0 || cashInput.value == null) {
     alert("유효한 값을 입력해주세요.");
   } else {
-    balance.textContent = `${cashInput.value} 원`;
+    balanceNum.textContent =
+      Number(balanceNum.textContent) + Number(cashInput.value);
   }
 });
+// 이거 어떻게 더해지게 하는거임 ?ㅠㅠㅠ
 
 // 획득 기능
 
